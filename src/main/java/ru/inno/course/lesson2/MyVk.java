@@ -1,4 +1,4 @@
-package lesson2;
+package ru.inno.course.lesson2;
 
 public class MyVk {
 
