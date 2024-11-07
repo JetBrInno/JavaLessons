@@ -8,6 +8,7 @@ public class World {
         jack.getOlder();
 
         int jackAge = jack.getAge();
+        System.out.println(jack);
       //  System.out.println(jackAge);
 
 

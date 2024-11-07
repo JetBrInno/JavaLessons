@@ -55,4 +55,15 @@ public class Human {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+            "name='" + name + '\'' +
+            ", age=" + age +
+            ", phone='" + phone + '\'' +
+            ", email='" + email + '\'' +
+            ", rating=" + rating +
+            '}';
+    }
 }

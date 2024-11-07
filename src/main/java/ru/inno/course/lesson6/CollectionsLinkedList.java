@@ -40,7 +40,7 @@ public class CollectionsLinkedList {
         humans.add(new Human("Sam", 35));
 
         System.out.println(humans.get(0).getName());
-
+        System.out.println(humans);
         for (Human human : humans)
         {
             System.out.println(human.getName() + " " + human.getAge());
