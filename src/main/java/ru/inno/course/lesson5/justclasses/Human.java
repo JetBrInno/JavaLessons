@@ -1,10 +1,17 @@
 package ru.inno.course.lesson5.justclasses;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Human {
+
     private String name;
     private int age;
     private String phone;
     private String email;
+
+    @JsonProperty("my_rating")
     private double rating;
 
     public Human(String name, int age, String phone, String email, double rating) {
@@ -18,6 +25,9 @@ public class Human {
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Human() {
     }
 
     public int getAge() { // int - тип возвращаемого значения
@@ -56,6 +66,9 @@ public class Human {
         this.age = age;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
     @Override
     public String toString() {
         return "Human{" +

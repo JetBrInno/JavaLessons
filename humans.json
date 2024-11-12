@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Олег",
+    "age": 60,
+    "phone": null,
+    "email": null,
+    "rating": 0.0
+  },
+  {
+    "name": "Алекс",
+    "age": 33,
+    "phone": null,
+    "email": null,
+    "rating": 0.0
+  },
+  {
+    "name": "Влад",
+    "age": 19,
+    "phone": null,
+    "email": null,
+    "rating": 0.0
+  }
+]
