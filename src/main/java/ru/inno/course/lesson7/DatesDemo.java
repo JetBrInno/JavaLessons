@@ -3,6 +3,7 @@ package ru.inno.course.lesson7;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class DatesDemo {
 
@@ -34,7 +35,10 @@ public class DatesDemo {
         LocalTime time = LocalTime.now();
         LocalDateTime timestamp = LocalDateTime.of(date, time);
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM.d.yy");
+        String formattedDate = formatter.format(timestamp);
         System.out.println(timestamp);
+        System.out.println(formattedDate);
 
     }
 }
