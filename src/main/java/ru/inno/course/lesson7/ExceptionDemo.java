@@ -11,6 +11,10 @@ public class ExceptionDemo {
         try {
             System.out.println("Результат: " + firstNumber/secondNumber);
         }
+        catch (NullPointerException ex)
+        {
+            System.out.println("Делить на ноль нельзя!");
+        }
         catch (Exception ex)
         {
             System.out.println("Делить на ноль нельзя!");
