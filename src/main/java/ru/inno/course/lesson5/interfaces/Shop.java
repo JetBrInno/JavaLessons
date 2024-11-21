@@ -15,15 +15,17 @@ public class Shop {
         String typeOfNotifier = new Scanner(System.in).nextLine();
 
         Notifier notifier;
-
         if (typeOfNotifier.equals("СМС")) {
             notifier = new SmsNotifier();
         } else if (typeOfNotifier.equals("EMAIL")) {
             notifier = new EmailNotifier();
         } else if (typeOfNotifier.equals("VIBER")) {
             notifier = new ViberNotifier();
-        } else {
+        } else if (typeOfNotifier.equals("TELEGRAM")) {
             notifier = new TelegramNotifier();
+        }
+        else {
+            notifier = new WhatsappNotifier();
         }
 
         notifier.notifyUser(jack, "г. Москва");

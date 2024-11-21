@@ -13,6 +13,7 @@ public class JsonFileToHuman {
         Path filePath = Path.of("oleg.json");
         ObjectMapper objectMapper = new ObjectMapper();
         Human human = objectMapper.readValue(filePath.toFile(), Human.class);
+
         System.out.println(human);
     }
 }
