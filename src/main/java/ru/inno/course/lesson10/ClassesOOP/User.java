@@ -16,5 +16,10 @@ public class User {
 
     public void sendMessage(String messageText){
         System.out.println(messageText);
+        //unBanMePlease();
     }
+
+//    protected void unBanMePlease(){
+//        System.out.println("Пожалуйста, разбаньте, я больше так не буду!");
+//    }
 }

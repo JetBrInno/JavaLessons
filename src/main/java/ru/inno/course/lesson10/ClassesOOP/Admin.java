@@ -1,5 +1,7 @@
 package ru.inno.course.lesson10.ClassesOOP;
 
+import java.util.Objects;
+
 public class Admin extends User {
 
     private String token;
@@ -16,5 +18,22 @@ public class Admin extends User {
 
     public void unban(){
         System.out.println("Я тебя разбанил");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Admin admin = (Admin) o;
+        return Objects.equals(token, admin.token);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(token);
     }
 }

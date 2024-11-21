@@ -11,6 +11,9 @@ public class Moderator extends User {
 
     public void sendAlert(){
         System.out.println("Я вам запрещаю нарушать правила");
+       // unBanMePlease();
+        sendMessage("Привет");
     }
+
 
 }
