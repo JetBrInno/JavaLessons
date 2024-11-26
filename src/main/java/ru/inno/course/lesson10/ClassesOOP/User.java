@@ -2,7 +2,7 @@ package ru.inno.course.lesson10.ClassesOOP;
 
 public class User {
 
-    private String name;
+    protected String name;
 
     private String surname;
 
@@ -19,7 +19,7 @@ public class User {
         //unBanMePlease();
     }
 
-//    protected void unBanMePlease(){
-//        System.out.println("Пожалуйста, разбаньте, я больше так не буду!");
-//    }
+    protected void unBanMePlease(){
+        System.out.println("Пожалуйста, разбаньте, я больше так не буду!");
+    }
 }
