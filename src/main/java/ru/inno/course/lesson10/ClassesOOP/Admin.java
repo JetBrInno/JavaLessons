@@ -19,6 +19,9 @@ public class Admin extends User {
     public void unban(){
         System.out.println("Я тебя разбанил");
     }
+    public void unban1(){
+        System.out.println("Я тебя разбанил");
+    }
 
     @Override
     public boolean equals(Object o) {
