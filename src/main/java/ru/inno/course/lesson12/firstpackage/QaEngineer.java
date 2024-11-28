@@ -5,6 +5,6 @@ public class QaEngineer extends Human {
     public void test(){
         publicMethod();
         protectedMethod();
-        privateMethod();
+     //  privateMethod();
     }
 }

@@ -6,6 +6,6 @@ public class Company {
 
     public static void main(String[] args) {
         QaEngineer qaEngineer = new QaEngineer();
-        qaEngineer.protectedMethod();
+        //qaEngineer.protectedMethod();
     }
 }

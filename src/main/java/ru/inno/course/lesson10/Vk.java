@@ -11,7 +11,7 @@ public class Vk {
         User user1 = new User("John", 1);
         User user2 = new User("User123", 2);
         User moderator = new Moderator("Moder4815", 5);
-        System.out.println(user1.name);
+       // System.out.println(user1.name);
         //moderator.sendAlert();
 //        moderator.sendMessage("Я модер, но я умею писать сообщения");
 //
@@ -22,7 +22,7 @@ public class Vk {
         System.out.println(users.size());
         user1.sendMessage("Привет! я юзер");
         moderator.sendMessage("Привет! я модератор");
-        user1.unBanMePlease();
+       // user1.unBanMePlease();
 
     }
 }
